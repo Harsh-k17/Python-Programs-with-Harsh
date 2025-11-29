@@ -1,0 +1,20 @@
+'''
+this will return the message() function out of display() function.
+The return message() function can be referenced with a new name 'fun'.
+'''
+#function can return other functions
+
+def display():
+    def message():
+        return 'Hello guys I'm Harsh '
+
+    return message
+
+#call display() function and it returns message() function
+# fun refers to the name : message.
+fun = display()
+print(fun())
+
+output 
+
+Hello guys I'm Harsh
