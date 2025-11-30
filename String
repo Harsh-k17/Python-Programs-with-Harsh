@@ -1,0 +1,20 @@
+#program to know the type of character entered by the user
+
+str = input('Enter a character: ')
+char = str[0]  #take only the 0th character into char
+
+if char.isalnum():
+    print('It is alphabet or numeric character')
+    if ch.isalpha():
+        print('It is capital letter')
+         if char.isupper():
+             print('It is capital letter')
+         else:
+             print('It is lowercase letter')
+    else:
+        print('It is a numeric digit')
+elif char.isspace():
+          print('It is a space')
+else:
+    print('It may be a special character')
+ 
