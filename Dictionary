@@ -1,0 +1,17 @@
+#to find number of occurences of each letter in a string using dictionary
+
+#take a string with some letters
+name = "HARSH KHANDAGALE"
+
+#take an empty dictinary
+dict={}
+
+#number of occurences as value
+for x in str:
+    dict[x] = dict.get(x,0) + 1
+
+#display key and value pairs of dict
+for k,v in dict.items():
+    print('key  =  {}\t Occurences = {}'.format(k,v))
+
+
