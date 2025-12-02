@@ -2,7 +2,7 @@
 ---Docstring for Rock paper scissor---
 
 
-first we import the random method
+first we import the random module
 
 second we used ot create a list to take the three strings/Elements.
 
@@ -46,4 +46,5 @@ elif user_choice == "Scissor":
         print("Scissor cut the paper = user win")
 
 else:
+
     print("Thanks for playing the game")
