@@ -45,6 +45,3 @@ elif user_choice == "Scissor":
     else:
         print("Scissor cut the paper = user win")
 
-else:
-
-    print("Thanks for playing the game")
