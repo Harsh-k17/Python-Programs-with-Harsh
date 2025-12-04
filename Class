@@ -1,0 +1,49 @@
+'''
+we used classes or objects to create this program.
+'''
+
+
+# program using a student class with intance methods to process the data of several students
+#instance methods to process data of the objects
+
+class Person:
+    # this a constructor
+    def __init__(self,user='',i=0):
+        self.name=user
+        self.income=i
+
+    # this is an instance method
+    def display(self):
+        print('Hello Respected Person ',self.name)
+        print('Your Income/Networth ',self.income)
+
+    # to calculate category based on Netowrth / Income
+    def calculate(self):
+        if(self.income>=100000000000):
+            print('You are a Ultra Rich Person or an Billionari Person \n your counting in 0.00000001 percent of population in the world')
+        elif(self.income>=10000000000):
+            print('You are a Rich Person or an Millionari Person \n your counting in 0000.1 percent of population in the world')
+        elif(self.income>=1000000000):
+            print('You are a Average Rick But Purchasing power is good \n your counting in 0.01 percent of population in the world')
+        elif(self.income>=100000000):
+            print('You are a Below Average Rich Major worth has going to pay Income Tax /n your counting 1 percent of population in the world')
+        elif(self.income>=10000000):
+            print('You are Middle class person /n your counting 4 percent of population in the world')
+        else:
+            print("You can't have enough money to fullfill your dreams so you have to go and Build your future with the help of study ")
+
+
+#create instances with some data from keyboard
+user = int(input('How many users will come: '))
+
+i=0
+while(i<user):
+    name = input('Enter your name: ')
+    income = float(input('Enter your Income / Networth : '))
+
+    #create Person class instance and store data
+    P = Person(name,income)
+    P.display()
+    P.calculate()
+    i+=1
+    print('--------------------')
