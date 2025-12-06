@@ -1,0 +1,22 @@
+# A python program to storing student,s marks into an array and finding total marks and percentage marks
+
+from array import*
+
+lst = [int(i) for i in input('Enter marks:').split(',')]
+
+
+#create an integer array from the above list
+marks = array('i',lst)
+
+
+#display the marks and find total
+sum=0
+for x in marks:
+    print(x)
+    sum+=x
+print('Total marks:',sum)
+
+#display percentage
+n = len(marks)
+percent = sum/n
+print('Percentage:',percent)
