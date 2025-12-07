@@ -1,0 +1,13 @@
+#car class take a name and price of car.
+
+class Car: #car is a class
+    def __init__(self,name,price): #its a constructor and self is a first parameter to refer the address of current class.
+        self.name = name
+        self.price = price
+
+    def display(self): # display method is used to display the content
+        print("This car feels luxury vibe",self.name)
+        print(self.name,"car price is =",self.price)
+
+C = Car("BMW",5000000) # C is a object of class
+C.display()
