@@ -1,0 +1,15 @@
+# A python program to understand how a function returns two values
+def sum_sub(a,b):
+    '''this function returns results of addtion and subtraction of a,b'''
+
+    c=a+b
+    d=a-b
+    return c,d
+
+#get the results from the sum_sub()function
+x,y=sum_sub(10,5)
+#display the result
+print('Result of addition:',x)
+print('result of subtraction:',y)
+    
+    
