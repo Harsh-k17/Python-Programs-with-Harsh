@@ -1,0 +1,36 @@
+
+
+s = 'Harsh khandagale'
+
+print('\ntype of strings:',s)
+print('Type:',type(s),'\tLength:',len(s))
+
+#next encode the strings and again display its value ,data type and string length
+
+s = s.encode('utf-8')
+
+print('\nEncode Strings:',s)
+print('Type:',type(s),'\tLength:',len(s))
+
+#Now decode the string and once more display its value , data type and string length - to reveal teh hexadecimal code point 
+#of the non _ASCII character
+
+s = s.decode('utf-8')
+
+print('\nDecode String:',s)
+print('Type:',type(s),'\tLength:',len(s))
+
+#add the statments to make "unicodedata"feautres available and a loop to reveal the unicode name of each character in the string.
+
+import unicodedata
+
+for i in range(len(s)):
+    print(s[i],unicodedata.name(s[i]),sep=':')
+
+##add the statments to assign the variable a new value
+
+s=b'Gr\xc3\xb6n'
+print('\nString:',s.decode('utf-8'))
+
+s='Gr\N{LATIN SMALL LETTER H}n'
+print('string:',s)
