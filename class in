@@ -1,0 +1,11 @@
+class Employee:
+    def __init__(self,name,post,salary):
+        self.name = name
+        self.post = post
+        self.salary = salary
+
+    def display(self):
+        print("Name =",self.name," post =",self.post,"Salary =",self.salary)
+
+x = Employee("Harsh","AI Engineer","10000000000")
+x.display()
