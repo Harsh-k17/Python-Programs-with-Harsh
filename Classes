@@ -1,0 +1,20 @@
+# python program to understand instance variables
+
+class Harsh:
+    #this is a constructor
+    def __init__(self):
+        self.x = 10
+
+    def modify(self):
+        self.x+=1
+
+#create 2 instances
+H1 = Harsh()
+H2 = Harsh()
+print('x in H1= ',H1.x)
+print('x in H2= ',H2.x)
+
+#modify x in H1
+H1.modify()
+print('x in H1= ',H1.x)
+print('x in H2= ',H2.x)
